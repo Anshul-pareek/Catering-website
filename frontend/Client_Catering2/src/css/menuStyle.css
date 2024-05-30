@@ -1,0 +1,168 @@
+/* Container Styles */
+.admin-panel-container {
+  width: 80%; /* Adjust width as needed */
+  max-width: 1200px; /* Limit maximum width */
+  margin: 100px auto; /* Center horizontally and add space from top */
+  padding: 20px; /* Add padding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  background-color: #fff; /* Set background color */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Header Styles */
+.navbar {
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Position at the top */
+  width: 100%; /* Occupy full width */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+/* Container Styles */
+.container-adminPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Adjust margin top */
+}
+
+.search-container-adminPanel {
+  width: 200px; /* Occupy full width */
+  margin-top: 20px; /* Add margin to the top */
+  margin-bottom: 20px;
+  text-align: center; /* Center the search input */
+}
+
+.search-input-adminPanel {
+  width: 50%; /* Reduce width */
+  padding: 8px; /* Adjust padding */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border: 1px solid black; /* Set border color to black */
+  color: black;
+}
+
+/* Menu Title and Add Menu Button Styles */
+.flex-container-adminPanel {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Spread items horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Menu Title Styles */
+.menu-title-adminPanel {
+  font-size: 2rem; /* Adjust font size */
+  font-weight: bold; /* Set font weight to bold */
+  margin-bottom: 1rem; /* Add margin bottom */
+}
+
+
+.add-menu-btn-adminPanel {
+  padding: 10px 20px;
+  background-color: #050606;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-menu-btn-adminPanel:hover {
+  background-color: #0056b3;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+
+/* Filter Styles */
+.filter-container-adminPanel {
+  width: 100%; /* Occupy full width */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Spread items horizontally */
+  margin-bottom: 20px;
+}
+
+/* Table Styles */
+.table-auto-adminPanel {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header-adminPanel {
+  padding: 10px;
+  background-color: #070707;
+  color: #fff;
+  text-align: left;
+}
+
+.table-data-adminPanel {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Button Styles for Update and Delete */
+.update-btn-adminPanel, .delete-btn-adminPanel {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update-btn-adminPanel {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.update-btn-adminPanel:hover {
+  background-color: #218838;
+}
+
+.delete-btn-adminPanel {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.delete-btn-adminPanel:hover {
+  background-color: #c82333;
+}
+
+/* Pagination Styles */
+.pagination-container-adminPanel {
+  width: 100%; /* Occupy full width */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+}
+
+.pagination-adminPanel {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.page-item-adminPanel {
+  margin-right: 5px;
+}
+
+.page-link-adminPanel {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page-link-adminPanel:hover {
+  background-color: #0056b3;
+}
+
+.active-adminPanel {
+  background-color: #0056b3;
+}

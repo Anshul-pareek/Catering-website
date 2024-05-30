@@ -1,0 +1,175 @@
+html,
+.root {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+body {
+  font: menu;
+  font-size: 1rem;
+  line-height: 1.4;
+  padding: 0;
+  margin: 0;
+}
+
+.container-summary {
+  padding-top: 4rem;
+  width: 50%;
+  margin: auto;
+}
+
+.heading-summary {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.category-summary {
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-summary h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.5rem;
+}
+
+.category-summary ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.category-summary li {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.email-section {
+  margin-top: 2rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  margin: 2rem auto;
+}
+
+.email-section input[type="email"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.email-section button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.email-section button:hover {
+  background-color: #0056b3;
+}
+
+details[open] summary ~ * {
+  animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-top: 1px solid black;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 300;
+  list-style: none;
+}
+
+details summary:after {
+  content: "+";
+  color: black;
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 0;
+  margin-top: 0.75rem;
+  right: 0;
+  font-weight: 200;
+  transform-origin: center;
+  transition: 200ms linear;
+}
+
+details[open] summary:after {
+  transform: rotate(45deg);
+  font-size: 2rem;
+}
+
+details summary {
+  outline: 0;
+}
+
+details p {
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+  padding-top: 1rem;
+}
+
+/* Summary.css */
+
+.category-summary {
+  position: relative;
+}
+
+.item {
+  position: relative;
+  padding-right: 40px; /* Adjust based on button size */
+}
+
+.item-details {
+  position: relative;
+}
+
+.remove-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px; /* Adjust based on desired spacing */
+  background: none;
+  border: none;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  color: darkred;
+}
+

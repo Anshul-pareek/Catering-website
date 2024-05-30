@@ -1,0 +1,252 @@
+/* Custom Tailwind CSS */
+body {
+  background-color: rgb(237, 239, 237);
+  color: black;
+}
+
+.menu-btn,
+.clear-filter-btn,
+.add-menu-btn {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+}
+
+.menu-btn {
+  background-color: #000;
+  color: #fff;
+}
+
+.clear-filter-btn {
+  background-color: #808080;
+}
+
+.add-menu-btn {
+  background-color: #008000;
+}
+
+.menu-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.search-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  outline: none;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.menu-filter,
+.clear-filter-btn {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.table-header,
+.table-data {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+.update-btn,
+.delete-btn {
+  margin-left: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.update-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Pagination Styles */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  display: inline-block;
+  padding: 8px 12px;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.page-link:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Optional: Adjust spacing and alignment for smaller screens */
+@media (max-width: 768px) {
+  .pagination-container {
+    margin-top: 10px;
+  }
+
+  .page-item {
+    margin: 0 3px;
+  }
+
+  .page-link {
+    padding: 6px 10px;
+  }
+}
+
+/* Table Styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Button Styles */
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-to-cart-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Additional Styles */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  width: 90%;
+  max-width: 1000px;
+  margin: 10vh auto;
+}
+
+.card {
+  flex: 0 1 calc(50% - 1.25rem);
+  border-radius: 16px;
+  box-shadow: 0 30px 30px -25px rgba(65, 51, 183, 0.25);
+  max-width: 300px;
+}
+
+.information {
+  background-color: #fff;
+  padding: 1.5rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #f1eeff;
+  color: #6558d3;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.5em 0.75em;
+  line-height: 1;
+  border-radius: 6px;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #141b22;
+  line-height: 1.25;
+  margin-top: 1rem;
+}
+
+.info {
+  color: #a0a0a0;
+  margin-top: 1rem;
+}
+
+.button {
+  font: inherit;
+  line-height: 1;
+  background-color: #fff;
+  border: 2px solid #6558d3;
+  color: #6558d3;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #6558d3;
+  color: #fff;
+}

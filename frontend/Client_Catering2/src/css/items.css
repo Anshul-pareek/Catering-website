@@ -1,0 +1,151 @@
+/* General Styling */
+.navbar {
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Position at the top */
+  width: 100%; /* Occupy full width */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+.heading {
+  text-align: center;
+  font-size: 2.5rem; /* Increase font size */
+  font-weight: bold;
+  color: #141b22;
+  margin-bottom: 2rem; /* Increase margin bottom */
+  text-transform: uppercase;
+}
+
+/* Cards Container */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 3rem; /* Increase gap */
+}
+
+/* Individual Card Styling */
+.card {
+  aspect-ratio: 1 / 1;
+  flex: 0 0 calc(15% - 1rem); /* Adjust width */
+  max-width: calc(15% - 1rem); /* Adjust width */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Decrease shadow */
+  overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Ensure smooth background color transition */
+  margin-bottom: 2rem; /* Decrease margin bottom */
+  cursor: pointer; /* Add cursor pointer */
+}
+
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 767px) {
+  .card {
+    flex: 0 0 100%; /* Full width on smaller screens */
+    max-width: 100%;
+  }
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-8px); /* Increase hover effect */
+}
+
+/* Selected Card Styling */
+.card.selected {
+  background-color: #28a745; /* Change background color to green */
+  color: #fff; /* Ensure text color changes to white */
+}
+
+/* Container Background Color when All Cards are Selected */
+.cards-container.all-selected {
+  background-color: #28a745; /* Change background color of entire container when all cards are selected */
+}
+
+/* Information Styling */
+.information {
+  padding: 1.5rem;
+}
+
+/* Tag Styling */
+.tag {
+  display: inline-block;
+  background-color: #f1eeff;
+  color: #6558d3;
+  font-weight: 600;
+  font-size: 0.7rem; /* Increase font size */
+  padding: 0.5em 1em; /* Adjust padding */
+  line-height: 1;
+  border-radius: 6px;
+}
+
+/* Title Styling */
+.title {
+  font-size: 1.2rem; /* Increase font size */
+  color: inherit; /* Ensure text inherits color (for selected state) */
+  line-height: 1.25;
+  margin-top: 1rem;
+}
+
+/* Info Styling */
+.info {
+  color: inherit; /* Ensure text inherits color (for selected state) */
+  margin-top: 1rem;
+}
+
+.button {
+  font: inherit;
+  line-height: 1;
+  background-color: #ffffff;
+  border: 2px solid #6558d3;
+  color: #6558d3;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #6558d3;
+  color: #ffffff;
+}
+
+/* Styling for navigation buttons */
+.navigation-buttons {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 0.5rem; /* Reduce gap */
+}
+
+.skip-button,
+.next-button {
+  font: inherit;
+  background-color: #6558d3;
+  color: #ffffff;
+  border: none;
+  padding: 0.5em 1em; /* Reduce padding */
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.skip-button:hover,
+.skip-button:focus,
+.next-button:hover,
+.next-button:focus {
+  background-color: #4133b7;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}

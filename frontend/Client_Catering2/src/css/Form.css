@@ -1,0 +1,6 @@
+
+.oval-border {
+    border: 2px solid black; /* Black border */
+    border-radius: 20px; /* Rounded corners to create an oval shape */
+    padding: 8px; /* Padding inside the border */
+  }
